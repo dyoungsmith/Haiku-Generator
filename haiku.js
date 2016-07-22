@@ -57,8 +57,18 @@ function createHaiku(arr1, arr2, arr3){
 	return poem;
 }
 
+function findHaiku(textFile){
+	/*	METHODOLOGY: 
+	read in the text files, stripping white space; go word by word, and for each line
+	find the word from the text in my dictionary to determine syllable count, then 
+	subtract that syllable count from the 5/7/5 structure for each line. If the words
+	in the text match up with this structure for each line, with full words on each line,
+	return the haiku!*/
+}
+
 
 //Export createHaiku
 module.exports = {
 	createHaiku: createHaiku,
+	findHaiku: findHaiku,
 };
